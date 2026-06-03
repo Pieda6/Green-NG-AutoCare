@@ -1,0 +1,62 @@
+.footer { background: #060d08; padding: 70px 0 32px; }
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 60px; margin-bottom: 56px;
+}
+.brand {}
+.logoMain {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.55rem; font-weight: 700; color: #fff; margin-bottom: 4px;
+}
+.logoSub {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: #74C365; margin-bottom: 16px;
+}
+.tagline {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem; font-weight: 300;
+  color: rgba(255,255,255,0.38); line-height: 1.7; max-width: 280px;
+}
+.colTitle {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem; font-weight: 500;
+  letter-spacing: 0.14em; text-transform: uppercase;
+  color: rgba(255,255,255,0.28); margin-bottom: 16px;
+}
+.col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+.col a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem; font-weight: 300;
+  color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s;
+}
+.col a:hover { color: #74C365; }
+.contactItem {
+  display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem; font-weight: 300;
+  color: rgba(255,255,255,0.5);
+}
+.contactItem a {
+  color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s;
+}
+.contactItem a:hover { color: #74C365; }
+.bottom {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 28px;
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;
+}
+.copy {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem; color: rgba(255,255,255,0.22);
+}
+.rc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem; color: rgba(116,195,101,0.45);
+}
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; gap: 36px; }
+}
