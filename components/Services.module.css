@@ -1,0 +1,81 @@
+.services {
+  padding: 120px 0;
+  background: #0D2B1A;
+  position: relative;
+  overflow: hidden;
+}
+.watermark {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(80px, 16vw, 200px);
+  font-weight: 900;
+  color: rgba(255,255,255,0.022);
+  white-space: nowrap;
+  pointer-events: none;
+  letter-spacing: 0.1em;
+}
+.head { margin-bottom: 56px; }
+.h2 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 700; color: #fff;
+  letter-spacing: -0.02em;
+  max-width: 460px; margin-top: 8px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+.card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  transition: background 0.3s, transform 0.25s;
+}
+.card:hover {
+  background: rgba(116,195,101,0.08);
+  transform: translateY(-4px);
+}
+.cardImg {
+  position: relative; height: 190px;
+  background-color: #1B4332;
+  background-size: cover; background-position: center;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.cardOverlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, #0D2B1A 0%, transparent 60%);
+}
+.cardIcon {
+  font-size: 2.5rem; opacity: 0.35; position: relative; z-index: 1;
+}
+.cardNum {
+  position: absolute; top: 14px; right: 18px;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem; font-weight: 900;
+  color: rgba(116,195,101,0.22); line-height: 1;
+}
+.cardBody { padding: 24px 26px 30px; }
+.cardTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem; font-weight: 700; color: #fff; margin-bottom: 10px;
+}
+.cardDesc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem; font-weight: 300;
+  color: rgba(255,255,255,0.58);
+  line-height: 1.75; margin-bottom: 18px;
+}
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem; font-weight: 500;
+  letter-spacing: 0.07em; text-transform: uppercase;
+  color: #74C365;
+  border: 1px solid rgba(116,195,101,0.28);
+  padding: 4px 9px;
+}
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; }
+}
