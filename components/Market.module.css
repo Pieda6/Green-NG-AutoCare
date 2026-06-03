@@ -1,0 +1,50 @@
+.market { padding: 120px 0; background: #EDE6D6; }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px; align-items: start;
+}
+.h2 {
+  font-size: clamp(1.9rem, 3.2vw, 2.8rem);
+  font-weight: 700; color: #0D2B1A;
+  letter-spacing: -0.02em; margin-bottom: 20px;
+}
+.p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.98rem; font-weight: 300;
+  color: #3D4D42; line-height: 1.82; margin-bottom: 24px;
+}
+.reasons { display: flex; flex-direction: column; gap: 14px; }
+.reason {
+  display: flex; gap: 16px; align-items: flex-start;
+  padding: 20px; background: #fff;
+  border-left: 3px solid #74C365;
+}
+.reasonIcon { font-size: 1.4rem; flex-shrink: 0; margin-top: 2px; }
+.reasonTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem; font-weight: 600; color: #0D2B1A; margin-bottom: 4px;
+}
+.reasonDesc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem; font-weight: 300; color: #6B7B6E; line-height: 1.6;
+}
+.targets { display: flex; flex-direction: column; gap: 10px; }
+.targetCard {
+  padding: 20px 22px; background: #0D2B1A;
+  border-right: 3px solid #74C365;
+  transition: transform 0.2s;
+}
+.targetCard:hover { transform: translateX(6px); }
+.targetTitle {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.98rem; font-weight: 600; color: #fff; margin-bottom: 4px;
+}
+.targetDesc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem; font-weight: 300;
+  color: rgba(255,255,255,0.55); line-height: 1.5;
+}
+@media (max-width: 900px) {
+  .grid { grid-template-columns: 1fr; gap: 56px; }
+}
