@@ -1,0 +1,47 @@
+.budget { padding: 100px 0; background: #EDE6D6; }
+.h2 {
+  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  font-weight: 700; color: #0D2B1A;
+  letter-spacing: -0.02em; margin-bottom: 48px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px; margin-bottom: 2px;
+}
+.item {
+  background: #fff; padding: 28px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.item:hover { border-color: #74C365; transform: translateY(-3px); }
+.cat {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.65rem; font-weight: 500;
+  letter-spacing: 0.12em; text-transform: uppercase;
+  color: #74C365; margin-bottom: 10px;
+}
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.05rem; font-weight: 700; color: #0D2B1A; margin-bottom: 8px;
+}
+.amount {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem; font-weight: 700; color: #2D6A4F;
+}
+.total {
+  background: #0D2B1A; padding: 28px 32px;
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+}
+.totalLabel {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: rgba(255,255,255,0.45);
+}
+.totalNum {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem; font-weight: 700; color: #74C365;
+}
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+}
