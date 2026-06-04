@@ -7,7 +7,7 @@ export default function Budget() {
         <div className={styles.inner}>
           <div className={styles.left}>
             <span className="section-label">Funding Target</span>
-            <h2 className={styles.h2}>We Are Raising<br />₦20,000,000</h2>
+            <h2 className={styles.h2}>We Are Raising<br />₦50,000,000</h2>
             <p className={styles.p}>
               This is the total amount needed to launch GreenNG AutoCare in
               Port Harcourt — covering the workshop, equipment, staffing, and
@@ -28,7 +28,7 @@ export default function Budget() {
           <div className={styles.right}>
             <div className={styles.amountCard}>
               <div className={styles.amountLabel}>Total Raise</div>
-              <div className={styles.amountNum}>₦20M</div>
+              <div className={styles.amountNum}>₦50M</div>
               <div className={styles.amountSub}>One-time funding target</div>
               <div className={styles.amountDivider} />
               <div className={styles.amountDetail}>30% return over 3 years</div>
