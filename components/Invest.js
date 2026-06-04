@@ -30,7 +30,7 @@ export default function Invest() {
       <div className="container">
         <div className={styles.head}>
           <span className="section-label">Investment Opportunity</span>
-          <h2 className={styles.h2}>₦20,000,000 Funding Target.<br />30% Return Over 3 Years.</h2>
+          <h2 className={styles.h2}>₦50,000,000 Funding Target.<br />30% Return Over 3 Years.</h2>
           <p className={styles.sub}>Choose how you receive your returns. Your principal is fully returned at the end of 3 years.</p>
         </div>
 
