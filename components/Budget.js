@@ -1,32 +1,41 @@
 import styles from './Budget.module.css'
 
-const items = [
-  { cat: '01 · Location',      name: 'Land / Lease',         amount: '₦2,000,000' },
-  { cat: '02 · Infrastructure', name: 'Workshop Structure',   amount: '₦3,500,000' },
-  { cat: '03 · Tools',          name: 'Equipment & Tools',    amount: '₦2,560,000' },
-  { cat: '04 · Stock',          name: 'Initial Inventory',    amount: '₦450,000'   },
-  { cat: '05 · People',         name: 'Staff (First 3 Months)', amount: '₦840,000' },
-  { cat: '06 · Growth',         name: 'Marketing & Operations', amount: '₦650,000' },
-]
-
 export default function Budget() {
   return (
     <section className={styles.budget} id="budget">
       <div className="container">
-        <span className="section-label">Transparency</span>
-        <h2 className={styles.h2}>Where Your Investment Goes</h2>
-        <div className={styles.grid}>
-          {items.map(i => (
-            <div key={i.cat} className={styles.item}>
-              <div className={styles.cat}>{i.cat}</div>
-              <div className={styles.name}>{i.name}</div>
-              <div className={styles.amount}>{i.amount}</div>
+        <div className={styles.inner}>
+          <div className={styles.left}>
+            <span className="section-label">Funding Target</span>
+            <h2 className={styles.h2}>We Are Raising<br />₦20,000,000</h2>
+            <p className={styles.p}>
+              This is the total amount needed to launch GreenNG AutoCare in
+              Port Harcourt — covering the workshop, equipment, staffing, and
+              first months of operations.
+            </p>
+            <div className={styles.actions}>
+              <a
+                href="https://www.oncrowdr.com/explore/c/greenng-auto-care-fundraising"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary"
+              >
+                Contribute Now →
+              </a>
+              <a href="#contact" className="btn-dark">Talk to the Founder</a>
             </div>
-          ))}
-        </div>
-        <div className={styles.total}>
-          <span className={styles.totalLabel}>Total Start-Up Cost</span>
-          <span className={styles.totalNum}>₦10,000,000</span>
+          </div>
+          <div className={styles.right}>
+            <div className={styles.amountCard}>
+              <div className={styles.amountLabel}>Total Raise</div>
+              <div className={styles.amountNum}>₦20M</div>
+              <div className={styles.amountSub}>One-time funding target</div>
+              <div className={styles.amountDivider} />
+              <div className={styles.amountDetail}>30% return over 3 years</div>
+              <div className={styles.amountDetail}>Principal returned after 3 years</div>
+              <div className={styles.amountDetail}>Open to all investors — any amount</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
