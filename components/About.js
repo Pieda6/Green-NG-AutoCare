@@ -42,7 +42,7 @@ export default function About() {
             <div className={styles.stats}>
               <div className={styles.stat}>
                 <span className={styles.statNum}>₦10M</span>
-                <span className={styles.statLbl}>Startup Budget</span>
+                <span className={styles.statLbl}>Workshop Budget</span>
               </div>
               <div className={styles.stat}>
                 <span className={styles.statNum}>3</span>
